@@ -48,3 +48,7 @@ void Window::swapBuffers(){
 void Window::terminate(){
 	glfwTerminate();
 }
+
+void Window::setShouldClose(bool flag){
+	glfwSetWindowShouldClose(window, flag);
+}
